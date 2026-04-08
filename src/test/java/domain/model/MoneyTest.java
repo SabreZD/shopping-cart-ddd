@@ -19,9 +19,9 @@ public class MoneyTest {
     @Test
     void testMoneyMultiply() {
         Money m = new Money(10);
-        Money result = m.multiply(3);
+        Money result = m.multiply(4);
 
-        assertEquals(30, result.getAmount());
+        assertEquals(40, result.getAmount());
     }
 
     @Test
