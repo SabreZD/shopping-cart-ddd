@@ -36,6 +36,6 @@ public class CartServiceTest {
         service.addItem(cart.getId(), "P1", 1, 50);
         service.addItem(cart.getId(), "P2", 3, 30);
 
-        assertEquals(145, service.getTotal(cart.getId()));
+        assertEquals(140, service.getTotal(cart.getId()));
     }
 }
