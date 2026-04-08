@@ -1,4 +1,4 @@
-name: Java CI
+#name: Java CI
 
 on:
   push:
@@ -21,3 +21,6 @@ jobs:
 
       - name: Build and test
         run: mvn clean test
+
+      - name: Reporting
+        run: mvn test surefire-report:report
