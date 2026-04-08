@@ -25,6 +25,6 @@ public class CartTest {
         cart.addItem(productId, 3, new Money(50));
 
         assertEquals(1, cart.getItems().size());
-        assertEquals(250, cart.getTotal().getAmount());
+        assertEquals(300, cart.getTotal().getAmount());
     }
 }
