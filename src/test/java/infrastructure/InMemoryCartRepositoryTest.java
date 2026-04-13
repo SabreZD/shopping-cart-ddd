@@ -11,12 +11,12 @@ public class InMemoryCartRepositoryTest {
     @Test
     void testSaveAndFind() {
         CartRepository repo = new InMemoryCartRepository();
-        Cart cart = new Cart("C1");
+        Cart cart = new Cart("C1-2");
 
         repo.save(cart);
 
         Cart retrieved = repo.findById("C1-2");
         assertNotNull(retrieved);
-        assertEquals("C1", retrieved.getId());
+        assertEquals("C1-2", retrieved.getId());
     }
 }
