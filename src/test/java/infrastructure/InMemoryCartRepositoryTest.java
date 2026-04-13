@@ -15,7 +15,7 @@ public class InMemoryCartRepositoryTest {
 
         repo.save(cart);
 
-        Cart retrieved = repo.findById("C1");
+        Cart retrieved = repo.findById("C1-2");
         assertNotNull(retrieved);
         assertEquals("C1", retrieved.getId());
     }
